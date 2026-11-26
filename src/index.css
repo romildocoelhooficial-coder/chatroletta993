@@ -1,0 +1,277 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   LIGHT CSS THEME OPTION (html.theme-light)
+   Preserves the default dark theme 100% untouched when .theme-light is absent.
+   ============================================================================ */
+
+html.theme-light {
+  color-scheme: light;
+}
+
+html.theme-light body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+/* Main canvases & surfaces */
+html.theme-light .bg-zinc-950,
+html.theme-light .bg-slate-950 {
+  background-color: #f1f5f9;
+}
+
+html.theme-light .bg-zinc-950\/80 {
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+html.theme-light .bg-zinc-950\/60,
+html.theme-light .bg-zinc-950\/40 {
+  background-color: #f8fafc;
+}
+
+html.theme-light .bg-zinc-900,
+html.theme-light .bg-slate-900 {
+  background-color: #ffffff;
+}
+
+html.theme-light .bg-zinc-900\/90,
+html.theme-light .bg-zinc-900\/80,
+html.theme-light .bg-zinc-900\/60 {
+  background-color: rgba(255, 255, 255, 0.96);
+}
+
+html.theme-light .bg-zinc-800 {
+  background-color: #e2e8f0;
+}
+
+html.theme-light .bg-zinc-800\/40,
+html.theme-light .bg-zinc-800\/50 {
+  background-color: rgba(226, 232, 240, 0.55);
+}
+
+/* Hover surface tweaks */
+html.theme-light .hover\:bg-zinc-800:hover,
+html.theme-light .hover\:bg-zinc-800\/40:hover {
+  background-color: #e2e8f0;
+}
+
+html.theme-light .hover\:bg-zinc-700:hover {
+  background-color: #cbd5e1;
+}
+
+/* Borders & Dividers */
+html.theme-light .border-zinc-800,
+html.theme-light .border-zinc-800\/80,
+html.theme-light .border-zinc-700,
+html.theme-light .border-zinc-700\/80,
+html.theme-light .border-slate-800 {
+  border-color: #cbd5e1;
+}
+
+html.theme-light .divide-zinc-800 > :not(:last-child),
+html.theme-light .divide-zinc-800\/60 > :not(:last-child) {
+  border-color: #e2e8f0;
+}
+
+/* Typography on light backgrounds */
+html.theme-light .text-white {
+  color: #0f172a;
+}
+
+html.theme-light .text-zinc-100,
+html.theme-light .text-zinc-200 {
+  color: #1e293b;
+}
+
+html.theme-light .text-zinc-300 {
+  color: #334155;
+}
+
+html.theme-light .text-zinc-400 {
+  color: #475569;
+}
+
+html.theme-light .text-zinc-500 {
+  color: #64748b;
+}
+
+html.theme-light .hover\:text-white:hover {
+  color: #0f172a;
+}
+
+/* Readable accents on light cards */
+html.theme-light .text-indigo-400,
+html.theme-light .text-indigo-300 {
+  color: #4338ca;
+}
+
+html.theme-light .text-indigo-200 {
+  color: #312e81;
+}
+
+html.theme-light .text-emerald-400,
+html.theme-light .text-emerald-300 {
+  color: #047857;
+}
+
+html.theme-light .text-emerald-200 {
+  color: #065f46;
+}
+
+html.theme-light .text-amber-400,
+html.theme-light .text-amber-300 {
+  color: #b45309;
+}
+
+html.theme-light .text-amber-200 {
+  color: #92400e;
+}
+
+html.theme-light .text-red-400,
+html.theme-light .text-red-300 {
+  color: #b91c1c;
+}
+
+html.theme-light .text-red-200 {
+  color: #991b1b;
+}
+
+html.theme-light .text-sky-400,
+html.theme-light .text-sky-300 {
+  color: #0369a1;
+}
+
+/* Light status & alert tints */
+html.theme-light .bg-emerald-950\/60,
+html.theme-light .bg-emerald-950\/40 {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+html.theme-light .bg-red-950\/60,
+html.theme-light .bg-red-950\/50,
+html.theme-light .bg-red-950\/40 {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+html.theme-light .bg-indigo-950\/40,
+html.theme-light .bg-indigo-950\/20 {
+  background-color: #eef2ff;
+  color: #312e81;
+}
+
+html.theme-light .from-indigo-950.via-violet-950.to-indigo-950 {
+  background-image: linear-gradient(to right, #eef2ff, #f5f3ff, #eef2ff);
+  color: #1e1b4b;
+}
+
+/* Form controls */
+html.theme-light input,
+html.theme-light textarea,
+html.theme-light select {
+  color: #0f172a;
+}
+
+html.theme-light input::placeholder,
+html.theme-light textarea::placeholder {
+  color: #64748b;
+}
+
+html.theme-light select option {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* Keep modal overlays translucent dark scrim */
+html.theme-light .fixed.inset-0.bg-black\/80,
+html.theme-light .fixed.inset-0.bg-black\/90 {
+  background-color: rgba(15, 23, 42, 0.55);
+}
+
+/* Preserve white ink inside solid colored buttons, badges, and gradients */
+html.theme-light .bg-indigo-600,
+html.theme-light .bg-indigo-500,
+html.theme-light .bg-emerald-600,
+html.theme-light .bg-emerald-500,
+html.theme-light .bg-red-600,
+html.theme-light .bg-rose-600,
+html.theme-light .bg-amber-600,
+html.theme-light .bg-blue-600,
+html.theme-light .bg-violet-600,
+html.theme-light .bg-gradient-to-tr,
+html.theme-light .hover\:bg-indigo-600:hover,
+html.theme-light .hover\:bg-emerald-600:hover,
+html.theme-light .hover\:bg-red-600:hover {
+  color: #ffffff;
+}
+
+html.theme-light .bg-indigo-600 *,
+html.theme-light .bg-emerald-600 *,
+html.theme-light .bg-red-600 *,
+html.theme-light .bg-rose-600 *,
+html.theme-light .bg-amber-600 *,
+html.theme-light .bg-blue-600 *,
+html.theme-light .bg-violet-600 *,
+html.theme-light .bg-gradient-to-tr * {
+  color: #ffffff;
+}
+
+/* Protect dark video stages and their overlaid HUD controls */
+html.theme-light .bg-black:has(video),
+html.theme-light .aspect-video.bg-black {
+  background-color: #09090b;
+}
+
+html.theme-light .bg-black:has(video) .text-white,
+html.theme-light .aspect-video.bg-black .text-white {
+  color: #ffffff;
+}
+
+html.theme-light .bg-black:has(video) .text-zinc-300,
+html.theme-light .aspect-video.bg-black .text-zinc-300 {
+  color: #d4d4d8;
+}
+
+html.theme-light .bg-black:has(video) .text-emerald-300,
+html.theme-light .aspect-video.bg-black .text-emerald-300 {
+  color: #6ee7b7;
+}
+
+html.theme-light .bg-black:has(video) .text-indigo-300,
+html.theme-light .aspect-video.bg-black .text-indigo-300 {
+  color: #a5b4fc;
+}
+
+html.theme-light .bg-black:has(video) .text-red-200,
+html.theme-light .aspect-video.bg-black .text-red-200 {
+  color: #fecaca;
+}
+
+/* Soft shadows on elevated cards in light theme */
+html.theme-light header {
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+/* Preserve white text inside 30% transparent red mobile footer bar */
+html.theme-light .bg-red-600\/30 .text-white {
+  color: #ffffff;
+}
+
+html.theme-light .bg-red-600\/30 .text-red-300 {
+  color: #fca5a5;
+}
+
+/* Keep Pix QR overlay card readable in light & dark themes */
+html.theme-light .bg-black:has(video) .qr-pix-card {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+html.theme-light .bg-black:has(video) .qr-pix-card .text-zinc-900 {
+  color: #0f172a;
+}
+
+html.theme-light .bg-black:has(video) .qr-pix-card .text-zinc-600 {
+  color: #475569;
+}
